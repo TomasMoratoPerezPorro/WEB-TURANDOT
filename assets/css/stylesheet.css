@@ -1,0 +1,14 @@
+.navbar-default{
+    transition:500ms ease;
+    background:transparent;
+  }
+  .navbar-default.scrolled{
+    background:#000;
+  }
+
+
+.welcome_container{
+    background-image: url("../images/imatge_fons.JPG");
+    color:#ebebeb;
+    
+}
