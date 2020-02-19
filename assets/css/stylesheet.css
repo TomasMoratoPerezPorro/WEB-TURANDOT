@@ -9,6 +9,65 @@
 
 .welcome_container{
     background-image: url("../images/imatge_fons.JPG");
+    background-position: center; 
     color:#ebebeb;
     
+}
+
+.sobre_nosaltres{
+  font-size: 1.25rem;
+  line-height: 1.5;
+  position: relative;
+  color: #151515;
+  
+}
+
+.sobre_nosaltres_titol{
+  font-size: 1.75rem;
+  margin-bottom: .8em;
+  font-family: Playfair Display,serif;
+  font-weight: 400;
+  line-height: 1.42857;
+  color: #151515;
+
+}
+
+.sobre_nosaltres::before{
+  display: block;
+  width: 30px;
+  margin: 1rem 0;
+  content: "";
+  border-top: 3px solid #806345;
+
+}
+
+.sobre_nosaltres_media{
+  padding: 0 20% 0 0;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .sobre_nosaltres_media::before{
+  
+    top: 10%;
+    left: 20%;
+    border: 1px solid #f0f0f0;
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    height: 100%;
+    content: "";
+  }
+}
+
+
+body{
+  font-family: Lato,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0;
+  text-align: left;
+  color: #777;
+  background-color: #fff;
 }
