@@ -71,3 +71,31 @@ body{
   color: #777;
   background-color: #fff;
 }
+
+
+@media (min-width: 768px){
+  .seccio_gradient {
+    height: 100vh;
+    padding: 6rem 0;
+}
+}
+
+.seccio_gradient {
+  min-height: 500px;
+  background: url("../images/imatge_gradient_01.png") no-repeat 50%/cover;
+}
+
+/* .seccio_gradient:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: linear-gradient(#fff,hsla(0,0%,100%,.1) 30%,transparent),linear-gradient(to bottom right,#fff 0,#fff 15%,transparent 30%,transparent);
+} */
+
+
+    
+
+
