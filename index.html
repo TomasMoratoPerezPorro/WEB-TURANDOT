@@ -18,7 +18,12 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+    <!--Image Carrousel-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <!-- My CSS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
 
 </head>
@@ -26,7 +31,7 @@
 <body>
 
     <!-- Navbar: Collapse -->
-    <nav class="navbar navbar-dark navbar-expand-lg  navbar-default fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -35,11 +40,11 @@
             <!-- Navbar navigation: Left -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre Nosaltres</a>
+                    <a class="nav-link m-3" href="#">Sobre Nosaltres</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre el menjar</a>
+                    <a class="nav-link m-3" href="#">Sobre el menjar</a>
                 </li>
             </ul>
 
@@ -51,13 +56,13 @@
             <!-- Navbar navigation: Right -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Algunes Imatges</a>
+                    <a class="nav-link m-3" href="#">Algunes Imatges</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">On som</a>
+                    <a class="nav-link m-3" href="#">On som</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Reservar</a>
+                    <a class="nav-link m-3" href="#">Reservar</a>
                 </li>
             </ul>
 
@@ -95,20 +100,20 @@
         <div class="row">
 
             <div class="col-md-2 align-self-start sobre_nosaltres">
-                <p>El Turandot és un acollidor restaurant, petit, situat en l'interior d'una peculiar casa begurenca.
+                <p>El Turandot és un acollidor restaurant
                 </p>
             </div>
 
             <div class="col-md-4 align-self-start">
                 <div class="sobre_nosaltres_media">
-                    <img src="assets\images\imatge_intro_vertical_01.jpg" class="img-fluid">
+                    <img src="assets\images\imatge_intro_vertical_01.jpg" class="img-fluid img_sobre_nosaltres">
                 </div>
             </div>
 
             <div class="col-md-6 align-self-center ">
 
                 <!-- Content -->
-                <h2 class="sobre_nosaltres_titol mt-3"><em>Sobre</em> nosaltres</h2>
+                <h2 class="sobre_nosaltres_titol mt-3"><em>Sobre nosaltres</em></h2>
                 <p>
                     La nostra cuina és fresca, variada, respectuosa... tant amb la tradició com amb els productes que
                     comprem.
@@ -131,8 +136,7 @@
 
                 <!-- Description -->
                 <p class="">
-                    Simplement fem les coses que ens agraden, amb molta ilusió i intentant cuidar sempre els petits
-                    detalls.
+                    Simplement fem les coses que ens agraden
                 </p>
 
             </div>
@@ -140,7 +144,7 @@
 
                 <!-- Image -->
                 <div class="sobre_nosaltres_media alt">
-                    <img src="assets\images\imatge_intro_vertical_02.jpg" class="img-fluid" alt="...">
+                    <img src="assets\images\imatge_intro_vertical_02.jpg" class="img-fluid img_sobre_nosaltres" alt="...">
                 </div>
 
             </div>
@@ -158,8 +162,8 @@
         </div> <!-- / .row -->
     </div> <!-- / .container -->
 
-    <div class="seccio_gradient">
-        <div class="container mt-5 ">
+    <div class="seccio_gradient mt-5 mb-5">
+        <div class="container mt-5 mb-5 ">
             <div class="row">
                 <div class="col-md-4">
 
@@ -175,6 +179,151 @@
         </div> <!-- / .container -->
 
     </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row  m-5">
+            <div class="col-m-2 el_nostre_menu">
+                <h2 class="sobre_nosaltres_titol">El nostre Menu</h2>
+                <p>Ens agrada pensar que hem creat un petit espai, íntim, relaxat, on poder gaudir
+                    d'una bona estona, d'un bon àpat, una cita... però sobretot un espai on sentir-se còmodes</p>
+
+            </div>
+        </div>
+
+        <nav class="section_menu__nav">
+            <div class="buttons-container mt-5 mb-5">
+                <a id="picapica" href="#section_menu__nav" class="mybutton button active" data-target="pizzaMenu">Per
+                    Coemnçar</a>
+                <a id="primers" href="#section_menu__nav" class="mybutton button" data-target="coffeeMenu">Primers</a>
+                <a id="segons" href="#section_menu__nav" class="mybutton button" data-target="noodlesMenu">Segons</a>
+                <a id="postres" href="#section_menu__nav" class="mybutton button" data-target="noodlesMenu">Postres</a>
+            </div>
+        </nav>
+
+        <!-- Start Pizza Menu -->
+        <div class="menu menu--is-visible" id="contenidos">
+            <div class="item">
+                <div class="item__header">
+                    <h3 class="item__title">Greek Pizza</h3>
+                    <span class="item__dots"></span>
+                    <span class="item__price">$22</span>
+                </div>
+                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum
+                    officia eaque nobis ut.</p>
+            </div>
+
+            <div class="item">
+                <div class="item__header">
+                    <h3 class="item__title">Cheese Pizza</h3>
+                    <span class="item__dots"></span>
+                    <span class="item__price">$20</span>
+                </div>
+                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum
+                    officia eaque nobis ut.</p>
+            </div>
+
+            <div class="item">
+                <div class="item__header">
+                    <h3 class="item__title">Neapolitan Pizza</h3>
+                    <span class="item__dots"></span>
+                    <span class="item__price">$18</span>
+                </div>
+                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum
+                    officia eaque nobis ut.</p>
+            </div>
+
+            <div class="item">
+                <div class="item__header">
+                    <h3 class="item__title">Pepperoni Pizza</h3>
+                    <span class="item__dots"></span>
+                    <span class="item__price">$15</span>
+                </div>
+                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum
+                    officia eaque nobis ut.</p>
+            </div>
+        </div> <!-- End Pizza Menu -->
+
+    </div>
+
+
+    <!-- DISHES
+	================================================== -->
+    <section class="section section_dishes mt-5 mb-5">
+
+        <!-- Header -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <!-- Heading -->
+                    <h2 class="text-center">
+                        Els nostres plats
+                    </h2>
+
+                    <!-- Subheading -->
+                    <p class="text-center">
+                        Quibusdam in labore tempore quidem voluptatum ullam soluta! Maiores!
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel dots-disabled mt-5 mb-5">
+            <div class="carousel-cell">
+
+                <!-- Image -->
+                <img src="assets\images\imatge_intro_02.jpg" alt="..." class="carousel-image">
+            </div>
+            <div class="carousel-cell">
+
+                <!-- Image -->
+                <img src="assets\images\imatge_carousel_2.jpg" alt="..." class="carousel-image">
+
+            </div>
+            <div class="carousel-cell">
+
+                <!-- Image -->
+                <img src="assets\images\imatge_carousel_3.jpg" alt="..." class="carousel-image">
+
+            </div>
+            <div class="carousel-cell">
+
+                <!-- Image -->
+                <img src="assets\images\imatge_carousel_4.jpg" alt="..." class="carousel-image">
+
+            </div>
+            <div class="carousel-cell">
+
+                <!-- Image -->
+                <img src="assets\images\imatge_carousel_5.jpg" alt="..." class="carousel-image">
+
+
+            </div>
+            <div class="carousel-cell">
+
+                <!-- Image -->
+                <img src="assets\images\imatge_carousel_6.jpg" alt="..." class="carousel-image">
+
+            </div>
+        </div> <!-- / .section_dishes__carousel -->
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- JS Custom -->
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
 

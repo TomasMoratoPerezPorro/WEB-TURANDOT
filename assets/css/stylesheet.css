@@ -1,11 +1,90 @@
-.navbar-default{
-    transition:500ms ease;
-    background:transparent;
-  }
-  .navbar-default.scrolled{
-    background:#000;
-  }
 
+.navbar:before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  transition: all .3s;
+  transform: translateY(-100%);
+  background-color: #fff;
+}
+
+.navbar-dark:before {
+  transform: translateY(0);
+}
+
+.navbar-light .navbar-brand,.navbar-light .navbar-brand:focus,.navbar-light .navbar-brand:hover {
+  color: #ffffff
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff
+}
+
+.navbar-light .navbar-nav .nav-link:focus,.navbar-light .navbar-nav .nav-link:hover {
+  color: #806345
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+  color: rgba(0,0,0,.3)
+}
+
+.navbar-light .navbar-nav .active>.nav-link,.navbar-light .navbar-nav .nav-link.active,.navbar-light .navbar-nav .nav-link.show,.navbar-light .navbar-nav .show>.nav-link {
+  color: #806345
+}
+
+.navbar-light .navbar-toggler {
+  color: #fff;
+  border-color: transparent
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar-light .navbar-text {
+  color: #fff
+}
+
+.navbar-dark .navbar-brand,.navbar-dark .navbar-brand:focus,.navbar-dark .navbar-brand:hover,.navbar-light .navbar-text a,.navbar-light .navbar-text a:focus,.navbar-light .navbar-text a:hover {
+  color: #806345
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #151515
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,.navbar-dark .navbar-nav .nav-link:hover {
+  color: #806345
+}
+
+.navbar-dark .navbar-nav .nav-link.disabled {
+  color: hsla(0,0%,100%,.25)
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,.navbar-dark .navbar-nav .nav-link.active,.navbar-dark .navbar-nav .nav-link.show,.navbar-dark .navbar-nav .show>.nav-link {
+  color: #806345
+}
+
+.navbar-dark .navbar-toggler {
+  color: #151515;
+  border-color: transparent
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23151515' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar-dark .navbar-text {
+  color: #151515
+}
+
+.navbar-dark .navbar-text a,.navbar-dark .navbar-text a:focus,.navbar-dark .navbar-text a:hover {
+  color: #806345
+}
 
 .welcome_container{
     background-image: url("../images/imatge_fons.JPG");
@@ -32,19 +111,7 @@
 
 }
 
-.sobre_nosaltres::before{
-  display: block;
-  width: 30px;
-  margin: 1rem 0;
-  content: "";
-  border-top: 3px solid #806345;
 
-}
-
-.sobre_nosaltres_media{
-  padding: 0 20% 0 0;
-  position: relative;
-}
 
 @media screen and (min-width: 768px) {
   .sobre_nosaltres_media::before{
@@ -57,6 +124,43 @@
     width: 80%;
     height: 100%;
     content: "";
+  }
+
+  .sobre_nosaltres::before{
+    display: block;
+    width: 30px;
+    margin: 1rem 0;
+    content: "";
+    border-top: 3px solid #806345;
+  
+  }
+  
+  .sobre_nosaltres_media{
+    padding: 0 20% 0 0;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .sobre_nosaltres::before{
+    display: block;
+    width: 30px;
+    margin: 1rem 0;
+    content: "";
+    border-top: 3px solid #806345;
+  
+  }
+  
+  .sobre_nosaltres_media{
+    padding: 0 20% 0 0;
+    position: relative;
+    min-height: 500px;
+  }
+
+  .img_sobre_nosaltres{
+    max-width: 80%;
+    height: auto;
   }
 }
 
@@ -94,6 +198,145 @@ body{
   content: "";
   background: linear-gradient(#fff,hsla(0,0%,100%,.1) 30%,transparent),linear-gradient(to bottom right,#fff 0,#fff 15%,transparent 30%,transparent);
 } */
+
+
+
+/* MENU */
+.menu {
+  display: none;
+}
+
+.menu--is-visible{
+  display: grid;
+}
+
+
+@media (min-width: 768px) {
+  .menu--is-visible{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+  }
+}
+
+  .item__header {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .item__title {
+    font-family: Playfair Display,serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.42857;
+    letter-spacing: 2px;
+    margin: 0;
+    color: #151515;
+  }
+
+  .item__dots {
+    flex: 1;
+    border-bottom: 1px dashed #aaa;
+    margin: 0 15px;
+  }
+
+  .item__price {
+    font-size: 1.375rem;
+    margin-bottom: .8em;
+    font-family: Playfair Display,serif;
+    font-weight: 400;
+    line-height: 1.42857;
+  }
+  
+  .item__description {
+    font-family: Lato,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: left;
+    color: #777;
+    background-color: #fff;
+    margin-bottom: 40px;
+  }
+
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+}
+
+.mybutton {
+    font-family: Lato,sans-serif;
+    font-size: .75rem;
+    font-weight: 900;
+    position: relative;
+    display: block;
+    padding: 1rem;
+    transition: color .1s;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #777;
+    text-decoration: none;
+}
+
+.mybutton::after{
+  position: absolute;
+  right: 1rem;
+  bottom: 5px;
+  left: 1rem;
+  display: block;
+  content: "";
+  transition: all .1s;
+  transform: translateY(10px);
+  opacity: 0;
+  border-top: 3px solid #806345;
+  text-decoration: none !important;
+}
+
+.mybutton.active::after{
+  transform: translateY(0);
+  opacity: 1
+}
+
+.mybutton:hover{
+  text-decoration: none;
+  color: #151515
+}
+
+
+
+.el_nostre_menu{
+  align-self: center!important;
+  text-align: center!important;
+  
+  margin-bottom: 2.5rem;
+
+}
+
+/* CAROUSEL */
+
+.carousel{
+  height: 250px;
+}
+
+/* default full-width cells */
+.carousel-cell {
+  height: 100%;
+  padding: 0 .25rem
+}
+
+.carousel-image{
+  width: auto;
+  max-width: none!important;
+  height: auto!important;
+  max-height: 100%
+}
+
 
 
     
