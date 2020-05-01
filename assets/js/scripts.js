@@ -66,7 +66,7 @@ function listaPicaPica() {
 			console.log(resposta);
 			$("#contenidos").empty();
 			$.each(resposta.picapica, function (index, element) {
-				$("#contenidos").append('<div class="item"><div class="item__header"><h3 class="item__title">' + element.titol + '<h3><span class="item__dots"></span><span class="item__price"></span></div></div>');
+				$("#contenidos").append('<div class="item"><div class="item__header"><h3 class="item__title">'+ element.titol +'</h3><span class="item__dots"></span><span class="item__price"></span></div></div>');
 				//$("#contenidos").append('<p>'+element.titol+'</p>');
 			});
 		},
@@ -94,7 +94,7 @@ function listaPrimers() {
 			console.log(resposta);
 			$("#contenidos").empty();
 			$.each(resposta.primers, function (index, element) {
-				$("#contenidos").append('<div class="item"><div class="item__header"><h3 class="item__title">' + element.titol + '<h3><span class="item__dots"></span><span class="item__price"></span></div><p class="item__description">' + element.descripcio + '</p></div>');
+				$("#contenidos").append('<div class="item"><div class="item__header"><h3 class="item__title">' + element.titol + '</h3><span class="item__dots"></span><span class="item__price"></span></div><p class="item__description">' + element.descripcio + '</p></div>');
 				//$("#contenidos").append('<p>'+element.titol+'</p>');
 			});
 		},
@@ -122,7 +122,7 @@ function listaSegons() {
 			console.log(resposta);
 			$("#contenidos").empty();
 			$.each(resposta.segons, function (index, element) {
-				$("#contenidos").append('<div class="item"><div class="item__header"><h3 class="item__title">' + element.titol + '<h3><span class="item__dots"></span><span class="item__price"></span></div><p class="item__description">' + element.descripcio + '</p></div>');
+				$("#contenidos").append('<div class="item"><div class="item__header"><h3 class="item__title">' + element.titol + '</h3><span class="item__dots"></span><span class="item__price"></span></div><p class="item__description">' + element.descripcio + '</p></div>');
 				//$("#contenidos").append('<p>'+element.titol+'</p>');
 			});
 		},
@@ -150,7 +150,7 @@ function listaPostres() {
 			console.log(resposta);
 			$("#contenidos").empty();
 			$.each(resposta.postres, function (index, element) {
-				$("#contenidos").append('<div class="item"><div class="item__header"><h3 class="item__title">' + element.titol + '<h3><span class="item__dots"></span><span class="item__price"></span></div></div>');
+				$("#contenidos").append('<div class="item"><div class="item__header"><h3 class="item__title">' + element.titol + '</h3><span class="item__dots"></span><span class="item__price"></span></div></div>');
 				//$("#contenidos").append('<p>'+element.titol+'</p>');
 			});
 		},

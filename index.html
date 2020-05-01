@@ -21,6 +21,9 @@
     <!--Image Carrousel-->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+    <!-- 3d viewer -->
+    <script src="photo-sphere-viewer@4.0.0-alpha.2"></script>
+
     <!-- My CSS -->
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -144,7 +147,8 @@
 
                 <!-- Image -->
                 <div class="sobre_nosaltres_media alt">
-                    <img src="assets\images\imatge_intro_vertical_02.jpg" class="img-fluid img_sobre_nosaltres" alt="...">
+                    <img src="assets\images\imatge_intro_vertical_02.jpg" class="img-fluid img_sobre_nosaltres"
+                        alt="...">
                 </div>
 
             </div>
@@ -251,7 +255,7 @@
     <section class="section section_dishes mt-5 mb-5">
 
         <!-- Header -->
-        <div class="container">
+        <div class="container mt-5 mb-5">
             <div class="row">
                 <div class="col">
 
@@ -311,6 +315,33 @@
 
     </section>
 
+    <section class="3d_view">
+        <div id="viewer"></div>
+
+        <style>
+            #viewer {
+                width: 100vw;
+                height: 50vh;
+            }
+        </style>
+
+        <script>
+            const viewer = new PhotoSphereViewer({
+                container: document.querySelector('#viewer'),
+                panorama: 'assets/images/PANO_20200303_183544.jpg'
+            });
+        </script>
+
+    </section>
+
+    <div>
+        <!-- Coloca este código donde quieras que se publique tu botón de reserva. -->
+        <div class="reservio-booking-button" data-business-id="U6mH0WAzmY" data-text="Reservar cita"
+            data-bgcolor="#cf0d00" data-color="#fff"></div>
+        <script id="reservio-widgets-script" type="text/javascript" src="https://static.reservio.com/js/widget.js">
+        </script>
+    </div>
+
 
 
 
@@ -324,6 +355,7 @@
 
     <script src="assets/js/scripts.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 
 
 
