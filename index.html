@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Restaurant Turandot</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -26,341 +28,409 @@
 
     <!-- My CSS -->
     <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="assets/lightbox/css/lightbox.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/stylesheet.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- Navbar: Collapse -->
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- Navbar navigation: Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link m-3" href="#">Sobre Nosaltres</a>
+          </li>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <!-- Navbar navigation: Left -->
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link m-3" href="#">Sobre Nosaltres</a>
-                </li>
+          <li class="nav-item">
+            <a class="nav-link m-3" href="#">Sobre el menjar</a>
+          </li>
+        </ul>
 
-                <li class="nav-item">
-                    <a class="nav-link m-3" href="#">Sobre el menjar</a>
-                </li>
-            </ul>
+        <!-- Navbar: Brand -->
+        <a class="navbar-brand d-none d-lg-flex" href="index.html">
+          TURANDOT
+        </a>
 
-            <!-- Navbar: Brand -->
-            <a class="navbar-brand d-none d-lg-flex" href="index.html">
-                TURANDOT
-            </a>
-
-            <!-- Navbar navigation: Right -->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link m-3" href="#">Algunes Imatges</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link m-3" href="#">On som</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link m-3" href="#">Reservar</a>
-                </li>
-            </ul>
-
-        </div>
-
-
-
-    </nav> <!-- / .navbar-collapse -->
-
+        <!-- Navbar navigation: Right -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link m-3" href="#">Algunes Imatges</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-3" href="#">On som</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-3" href="#">Reservar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- / .navbar-collapse -->
 
     <div class="jumbotron jumbotron-fluid welcome_container mb-5">
-        <div class="d-flex container justify-content-center" style="height:700px">
-            <div class=" align-self-center">
-
-                <!-- Heading -->
-                <h2 class="section__preheading section_welcome__preheading text-center text-muted">
-                    Restaurant
-                </h2>
-                <h1 class="section__heading section_welcome__heading text-center">
-                    TURANDOT
-                </h1>
-                <p class="section__subheading section_welcome__subheading text-center text-muted">
-                    El plaer del empordà
-                </p>
-
-
-
-
-            </div> <!-- / .row -->
-        </div> <!-- / .container -->
-
-    </div>
-
-    <div class="container mt-5">
-        <div class="row">
-
-            <div class="col-md-2 align-self-start sobre_nosaltres">
-                <p>El Turandot és un acollidor restaurant
-                </p>
-            </div>
-
-            <div class="col-md-4 align-self-start">
-                <div class="sobre_nosaltres_media">
-                    <img src="assets\images\imatge_intro_vertical_01.jpg" class="img-fluid img_sobre_nosaltres">
-                </div>
-            </div>
-
-            <div class="col-md-6 align-self-center ">
-
-                <!-- Content -->
-                <h2 class="sobre_nosaltres_titol mt-3"><em>Sobre nosaltres</em></h2>
-                <p>
-                    La nostra cuina és fresca, variada, respectuosa... tant amb la tradició com amb els productes que
-                    comprem.
-                    No ens agraden massa les etiquetes. No pretenem ser un restaurant gastronòmic, ni única i
-                    exclusivament tradicional.
-                    Simplement fem les coses que ens agraden i com ens agraden, amb molta ilusió i intentant cuidar
-                    sempre els petits detalls.
-
-                </p>
-
-            </div>
-
+      <div
+        class="d-flex container justify-content-center"
+        style="height: 700px;"
+      >
+        <div class="align-self-center">
+          <!-- Heading -->
+          <h2
+            class="section__preheading section_welcome__preheading text-center"
+          >
+            Restaurant
+          </h2>
+          <h1 class="section__heading section_welcome__heading text-center">
+            TURANDOT
+          </h1>
+          <p
+            class="section__subheading section_welcome__subheading text-center"
+          >
+            El plaer del empordà
+          </p>
         </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
     </div>
 
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-2 align-self-start sobre_nosaltres slogan">
+          <p>El Turandot és un acollidor restaurant</p>
+        </div>
+
+        <div class="col-md-4 align-self-start">
+          <div class="sobre_nosaltres_media">
+            <img
+              src="assets\images\imatge_intro_vertical_01.jpg"
+              class="img-fluid img_sobre_nosaltres"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-6 align-self-center">
+          <!-- Content -->
+          <h2 class="sobre_nosaltres_titol mt-3"><em>Sobre nosaltres</em></h2>
+          <p>
+            La nostra cuina és fresca, variada, respectuosa... tant amb la
+            tradició com amb els productes que comprem. No ens agraden massa les
+            etiquetes. No pretenem ser un restaurant gastronòmic, ni única i
+            exclusivament tradicional. Simplement fem les coses que ens agraden
+            i com ens agraden, amb molta ilusió i intentant cuidar sempre els
+            petits detalls.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-2 order-md-2 align-self-end sobre_nosaltres">
-
-                <!-- Description -->
-                <p class="">
-                    Simplement fem les coses que ens agraden
-                </p>
-
-            </div>
-            <div class="col-md-4 order-md-3 align-self-start">
-
-                <!-- Image -->
-                <div class="sobre_nosaltres_media alt">
-                    <img src="assets\images\imatge_intro_vertical_02.jpg" class="img-fluid img_sobre_nosaltres"
-                        alt="...">
-                </div>
-
-            </div>
-            <div class="col-md-6 order-md-1 align-self-center">
-
-                <!-- Content -->
-                <h2 class="sobre_nosaltres_titol mt-3"><em>Us esperem !</em></h2>
-                <p>
-                    Ens agrada pensar que hem creat un petit espai, íntim, relaxat, on poder gaudir
-                    d'una bona estona, d'un bon àpat, una cita... però sobretot un espai on sentir-se còmodes,
-                    com a casa, com els nostres convidats... Us esperem! Lucas i Celeste
-                </p>
-
-            </div>
-        </div> <!-- / .row -->
-    </div> <!-- / .container -->
+      <div class="row">
+        <div class="col-md-2 order-md-2 align-self-end sobre_nosaltres slogan">
+          <!-- Description -->
+          <p class="">
+            Simplement fem les coses que ens agraden
+          </p>
+        </div>
+        <div class="col-md-4 order-md-3 align-self-start">
+          <!-- Image -->
+          <div class="sobre_nosaltres_media alt">
+            <img
+              src="assets\images\imatge_intro_vertical_02.jpg"
+              class="img-fluid img_sobre_nosaltres"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="col-md-6 order-md-1 align-self-center">
+          <!-- Content -->
+          <h2 class="sobre_nosaltres_titol mt-3"><em>Us esperem !</em></h2>
+          <p class="sobre_nosaltres_text">
+            Ens agrada pensar que hem creat un petit espai, íntim, relaxat, on
+            poder gaudir d'una bona estona, d'un bon àpat, una cita... però
+            sobretot un espai on sentir-se còmodes, com a casa, com els nostres
+            convidats... Us esperem! Lucas i Celeste
+          </p>
+        </div>
+      </div>
+      <!-- / .row -->
+    </div>
+    <!-- / .container -->
 
     <div class="seccio_gradient mt-5 mb-5">
-        <div class="container mt-5 mb-5 ">
-            <div class="row">
-                <div class="col-md-4">
-
-                    <!-- Description -->
-                    <p class="sobre_nosaltres">
-                        La nostra cuina és fresca, variada, respectuosa... tant amb la tradició com amb els productes
-                        que
-                        comprem.
-                    </p>
-
-                </div>
-            </div> <!-- / .row -->
-        </div> <!-- / .container -->
-
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-md-4 slogan">
+            <!-- Description -->
+            <p class="sobre_nosaltres">
+              La nostra cuina és fresca, variada, respectuosa... tant amb la
+              tradició com amb els productes que comprem.
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
     </div>
 
-    <div class="container mt-5 mb-5">
-        <div class="row  m-5">
-            <div class="col-m-2 el_nostre_menu">
-                <h2 class="sobre_nosaltres_titol">El nostre Menu</h2>
-                <p>Ens agrada pensar que hem creat un petit espai, íntim, relaxat, on poder gaudir
-                    d'una bona estona, d'un bon àpat, una cita... però sobretot un espai on sentir-se còmodes</p>
-
-            </div>
+    <section class="section_carta">
+      <div class="container mt-5 mb-5">
+        <div class="row m-5">
+          <div class="col-m-2 el_nostre_menu">
+            <h2 class="sobre_nosaltres_titol">El nostre Menu</h2>
+            <p class="sobre_nosaltres_text">
+              Ens agrada pensar que hem creat un petit espai, íntim, relaxat, on
+              poder gaudir d'una bona estona, d'un bon àpat, una cita... però
+              sobretot un espai on sentir-se còmodes
+            </p>
+          </div>
         </div>
 
         <nav class="section_menu__nav">
-            <div class="buttons-container mt-5 mb-5">
-                <a id="picapica" href="#section_menu__nav" class="mybutton button active" data-target="pizzaMenu">Per
-                    Coemnçar</a>
-                <a id="primers" href="#section_menu__nav" class="mybutton button" data-target="coffeeMenu">Primers</a>
-                <a id="segons" href="#section_menu__nav" class="mybutton button" data-target="noodlesMenu">Segons</a>
-                <a id="postres" href="#section_menu__nav" class="mybutton button" data-target="noodlesMenu">Postres</a>
-            </div>
+          <div class="buttons-container mt-2 mb-5">
+            <a
+              id="picapica"
+              href="#section_menu__nav"
+              class="mybutton button active"
+              data-target="pizzaMenu"
+              >Per Coemnçar</a
+            >
+            <a
+              id="primers"
+              href="#section_menu__nav"
+              class="mybutton button"
+              data-target="coffeeMenu"
+              >Primers</a
+            >
+            <a
+              id="segons"
+              href="#section_menu__nav"
+              class="mybutton button"
+              data-target="noodlesMenu"
+              >Segons</a
+            >
+            <a
+              id="postres"
+              href="#section_menu__nav"
+              class="mybutton button"
+              data-target="noodlesMenu"
+              >Postres</a
+            >
+          </div>
         </nav>
 
         <!-- Start Pizza Menu -->
         <div class="menu menu--is-visible" id="contenidos">
-            <div class="item">
-                <div class="item__header">
-                    <h3 class="item__title">Greek Pizza</h3>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$22</span>
-                </div>
-                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum
-                    officia eaque nobis ut.</p>
+          <div class="item">
+            <div class="item__header">
+              <h3 class="item__title">Greek Pizza</h3>
+              <span class="item__dots"></span>
+              <span class="item__price">$22</span>
             </div>
+            <p class="item__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              quos harum officia eaque nobis ut.
+            </p>
+          </div>
 
-            <div class="item">
-                <div class="item__header">
-                    <h3 class="item__title">Cheese Pizza</h3>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$20</span>
-                </div>
-                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum
-                    officia eaque nobis ut.</p>
+          <div class="item">
+            <div class="item__header">
+              <h3 class="item__title">Cheese Pizza</h3>
+              <span class="item__dots"></span>
+              <span class="item__price">$20</span>
             </div>
+            <p class="item__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              quos harum officia eaque nobis ut.
+            </p>
+          </div>
 
-            <div class="item">
-                <div class="item__header">
-                    <h3 class="item__title">Neapolitan Pizza</h3>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$18</span>
-                </div>
-                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum
-                    officia eaque nobis ut.</p>
+          <div class="item">
+            <div class="item__header">
+              <h3 class="item__title">Neapolitan Pizza</h3>
+              <span class="item__dots"></span>
+              <span class="item__price">$18</span>
             </div>
+            <p class="item__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              quos harum officia eaque nobis ut.
+            </p>
+          </div>
 
-            <div class="item">
-                <div class="item__header">
-                    <h3 class="item__title">Pepperoni Pizza</h3>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$15</span>
-                </div>
-                <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum
-                    officia eaque nobis ut.</p>
+          <div class="item">
+            <div class="item__header">
+              <h3 class="item__title">Pepperoni Pizza</h3>
+              <span class="item__dots"></span>
+              <span class="item__price">$15</span>
             </div>
-        </div> <!-- End Pizza Menu -->
-
-    </div>
-
+            <p class="item__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              quos harum officia eaque nobis ut.
+            </p>
+          </div>
+        </div>
+        <!-- End Pizza Menu -->
+      </div>
+    </section>
 
     <!-- DISHES
 	================================================== -->
-    <section class="section section_dishes mt-5 mb-5">
+    <section class="section section_dishes">
+      <!-- Header -->
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col">
+            <!-- Heading -->
+            <h2 class="text-center">
+              Els nostres plats
+            </h2>
 
-        <!-- Header -->
-        <div class="container mt-5 mb-5">
-            <div class="row">
-                <div class="col">
-
-                    <!-- Heading -->
-                    <h2 class="text-center">
-                        Els nostres plats
-                    </h2>
-
-                    <!-- Subheading -->
-                    <p class="text-center">
-                        Quibusdam in labore tempore quidem voluptatum ullam soluta! Maiores!
-                    </p>
-
-                </div>
-            </div>
+            <!-- Subheading -->
+            <p class="text-center">
+              Quibusdam in labore tempore quidem voluptatum ullam soluta!
+              Maiores!
+            </p>
+          </div>
         </div>
+      </div>
 
-        <!-- Carousel -->
-        <div class="carousel dots-disabled mt-5 mb-5">
-            <div class="carousel-cell">
-
-                <!-- Image -->
-                <img src="assets\images\imatge_intro_02.jpg" alt="..." class="carousel-image">
-            </div>
-            <div class="carousel-cell">
-
-                <!-- Image -->
-                <img src="assets\images\imatge_carousel_2.jpg" alt="..." class="carousel-image">
-
-            </div>
-            <div class="carousel-cell">
-
-                <!-- Image -->
-                <img src="assets\images\imatge_carousel_3.jpg" alt="..." class="carousel-image">
-
-            </div>
-            <div class="carousel-cell">
-
-                <!-- Image -->
-                <img src="assets\images\imatge_carousel_4.jpg" alt="..." class="carousel-image">
-
-            </div>
-            <div class="carousel-cell">
-
-                <!-- Image -->
-                <img src="assets\images\imatge_carousel_5.jpg" alt="..." class="carousel-image">
-
-
-            </div>
-            <div class="carousel-cell">
-
-                <!-- Image -->
-                <img src="assets\images\imatge_carousel_6.jpg" alt="..." class="carousel-image">
-
-            </div>
-        </div> <!-- / .section_dishes__carousel -->
-
+      <!-- Carousel -->
+      <div class="carousel dots-disabled mt-5 mb-5">
+        <div class="carousel-cell">
+          <!-- Image -->
+          <img
+            src="assets\images\imatge_intro_02.jpg"
+            alt="..."
+            class="carousel-image"
+          />
+        </div>
+        <div class="carousel-cell">
+          <!-- Image -->
+          <img
+            src="assets\images\imatge_carousel_2.jpg"
+            alt="..."
+            class="carousel-image"
+          />
+        </div>
+        <div class="carousel-cell">
+          <!-- Image -->
+          <img
+            src="assets\images\imatge_carousel_3.jpg"
+            alt="..."
+            class="carousel-image"
+          />
+        </div>
+        <div class="carousel-cell">
+          <!-- Image -->
+          <img
+            src="assets\images\imatge_carousel_4.jpg"
+            alt="..."
+            class="carousel-image"
+          />
+        </div>
+        <div class="carousel-cell">
+          <!-- Image -->
+          <img
+            src="assets\images\imatge_carousel_5.jpg"
+            alt="..."
+            class="carousel-image"
+          />
+        </div>
+        <div class="carousel-cell">
+          <!-- Image -->
+          <img
+            src="assets\images\imatge_carousel_6.jpg"
+            alt="..."
+            class="carousel-image"
+          />
+        </div>
+      </div>
+      <!-- / .section_dishes__carousel -->
     </section>
 
-    <section class="3d_view">
-        <div id="viewer"></div>
+    <!-- GALLERY
+	================================================== -->
+    <section class="section section_gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!-- Heading -->
+            <h2 class="section__heading text-center">
+              Casa nostra
+            </h2>
 
-        <style>
-            #viewer {
-                width: 100vw;
-                height: 50vh;
-            }
-        </style>
-
-        <script>
-            const viewer = new PhotoSphereViewer({
-                container: document.querySelector('#viewer'),
-                panorama: 'assets/images/PANO_20200303_183544.jpg'
-            });
-        </script>
-
+            <!-- Subheading -->
+            <p class="section__subheading text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+        <div class="row section_gallery__grid">
+          <div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item">
+            <a href="assets\images\gallery\Turandot_primavera_2020_Local_1.jpg" data-lightbox="gallery">
+              <img src="assets\images\gallery\Turandot_primavera_2020_Local_1.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item">
+            <a href="assets\images\gallery\Turandot_primavera_2020_Local_2.jpg" data-lightbox="gallery">
+              <img src="assets\images\gallery\Turandot_primavera_2020_Local_2.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item">
+            <a href="assets\images\gallery\Turandot_primavera_2020_Local_3.jpg" data-lightbox="gallery">
+              <img src="assets\images\gallery\Turandot_primavera_2020_Local_3.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item">
+            <a href="assets\images\gallery\Turandot_primavera_2020_Local_4.jpg" data-lightbox="gallery">
+              <img src="assets\images\gallery\Turandot_primavera_2020_Local_4.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item">
+            <a href="assets\images\gallery\Turandot_primavera_2020_Local_5.jpg" data-lightbox="gallery">
+              <img src="assets\images\gallery\Turandot_primavera_2020_Local_5.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item">
+            <a href="assets\images\gallery\Turandot_primavera_2020_Local_6.jpg" data-lightbox="gallery">
+              <img src="assets\images\gallery\Turandot_primavera_2020_Local_6.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item">
+            <a href="assets\images\gallery\Turandot_primavera_2020_Local_7.jpg" data-lightbox="gallery">
+              <img src="assets\images\gallery\Turandot_primavera_2020_Local_7.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item">
+            <a href="assets\images\gallery\Turandot_primavera_2020_Local_8.jpg" data-lightbox="gallery">
+              <img src="assets\images\gallery\Turandot_primavera_2020_Local_8.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
     </section>
-
-    <div>
-        <!-- Coloca este código donde quieras que se publique tu botón de reserva. -->
-        <div class="reservio-booking-button" data-business-id="U6mH0WAzmY" data-text="Reservar cita"
-            data-bgcolor="#cf0d00" data-color="#fff"></div>
-        <script id="reservio-widgets-script" type="text/javascript" src="https://static.reservio.com/js/widget.js">
-        </script>
-    </div>
-
-
-
-
-
-
-
-
-
 
     <!-- JS Custom -->
 
     <script src="assets/js/scripts.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-
-
-
-
-
-</body>
-
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="assets/lightbox/js/lightbox.js"></script>
+  </body>
 </html>

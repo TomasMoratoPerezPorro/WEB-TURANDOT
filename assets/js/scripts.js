@@ -31,6 +31,30 @@ var Navbar = function () {
 
 
 $(document).ready(function () {
+	listaPicaPica();
+	apartatCarta();
+	galeria();
+	
+});
+
+function galeria(){
+	$('.grid').isotope({
+		// options
+		itemSelector: '.section_gallery__grid__item',
+		//layoutMode: 'fitRows'
+	  });
+	  var e = $(".section_gallery__grid");
+	  e.length && e.each(function () {
+		  var e = $(this).isotope({
+			  itemSelector: ".section_gallery__grid__item"
+		  });
+		  e.imagesLoaded().progress(function () {
+			  e.isotope("layout")
+		  })
+	  })
+}
+
+function apartatCarta(){
 	$(".mybutton").click(function () {
 		//alert("The paragraph was clicked.");
 		buttons.forEach(button => button.classList.remove('active'));
@@ -49,7 +73,8 @@ $(document).ready(function () {
 			listaPostres();
 		}
 	});
-});
+
+}
 
 function listaPicaPica() {
 	$.ajax({
