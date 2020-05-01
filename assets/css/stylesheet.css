@@ -128,7 +128,8 @@
 }
 
 .welcome_container{
-    background-image: url("../images/imatge_fons.JPG");
+    background-image: url("../images/imatge_fons_2.jpg");
+    background-size:cover;
     background-position: center; 
     color:#ebebeb;
     
@@ -183,6 +184,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .welcome_container{
+    background-image: url("../images/imatge_fons_2.jpg");
+    background-size:cover;
+    background-position: right; 
+    color:#ebebeb;
+    
+}
+
+
 .sobre_nosaltres_titol{
   text-align: center;
 }
@@ -230,7 +240,8 @@ body{
 }
 
 .seccio_gradient {
-  min-height: 500px;
+  max-height: 400px;
+  min-height: 300px;
   background: url("../images/imatge_gradient_01.png") no-repeat 50%/cover;
 }
 
